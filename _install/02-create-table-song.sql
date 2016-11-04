@@ -66,9 +66,7 @@ CREATE TABLE `mini`.`ibe_event` (
 `EventStartTime` time default NULL COMMENT 'event starting time',
 PRIMARY KEY  (`event_id`),
 KEY `LocNDX` (`EventLocationID`),
-KEY `SponsorNDX` (`EventSponsor`),
-CONSTRAINT `FK_ibe_event_sponsor` FOREIGN KEY (`EventSponsor`) REFERENCES `ibe_organization` (`organization_id`),
-CONSTRAINT `FK_LOC` FOREIGN KEY (`EventLocationID`) REFERENCES `ibe_location` (`location_id`)
+KEY `SponsorNDX` (`EventSponsor`)
 ) ENGINE=InnoDB AUTO_INCREMENT=165 DEFAULT CHARSET=latin1 COMMENT='info re events where info gathered';
 
 /*Data for the table `ibe_event` */
