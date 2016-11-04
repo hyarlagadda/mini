@@ -205,7 +205,7 @@ UNLOCK TABLES;
 
 /*Data for the table `ibe`.`ibe_refsource` */
 
-LOCK TABLES `ibe_refsource` WRITE;
+LOCK TABLES `ibe`.`ibe_refsource` WRITE;
 
 insert  into `ibe`.`ibe_refsource`(`refsource_id`,`refsource_name`) values (1,'Bank');
 insert  into `ibe`.`ibe_refsource`(`refsource_id`,`refsource_name`) values (2,'Newspaper');
