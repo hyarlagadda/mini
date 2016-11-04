@@ -30,7 +30,7 @@ INSERT INTO `mini`.`song` (`id`, `artist`, `track`, `link`) VALUES
 (29, 'Shuttle Life', 'The Birds', 'http://www.youtube.com/watch?v=-I3m3cWDEtM'),
 (30, 'SantÃ©', 'Homegirl (Rampa Mix)', 'http://www.youtube.com/watch?v=fnhMNOWxLYw');
 
-LOCK TABLES `mini`.`ibe_busstage` WRITE;
+/* LOCK TABLES `mini`.`ibe_busstage` WRITE;*/
 
 insert  into `mini`.`ibe_busstage`(`stage_id`,`stage_name`) values (1,'Not in Business');
 insert  into `mini`.`ibe_busstage`(`stage_id`,`stage_name`) values (2,'Planning');
@@ -38,11 +38,11 @@ insert  into `mini`.`ibe_busstage`(`stage_id`,`stage_name`) values (3,'Start-up 
 insert  into `mini`.`ibe_busstage`(`stage_id`,`stage_name`) values (4,'In-Business [3+ years]');
 insert  into `mini`.`ibe_busstage`(`stage_id`,`stage_name`) values (5,'Unknown');
 
-UNLOCK TABLES;
+/* UNLOCK TABLES; */
 
 /*Data for the table `ibe_bustype` */
 
-LOCK TABLES `mini`.`ibe_bustype` WRITE;
+/* LOCK TABLES `mini`.`ibe_bustype` WRITE; */
 
 insert  into `mini`.`ibe_bustype`(`type_id`,`type_name`) values (1,'Not Applicable');
 insert  into `mini`.`ibe_bustype`(`type_id`,`type_name`) values (2,'No Response');
@@ -50,11 +50,11 @@ insert  into `mini`.`ibe_bustype`(`type_id`,`type_name`) values (3,'Business-to-
 insert  into `mini`.`ibe_bustype`(`type_id`,`type_name`) values (4,'Business-to-Customer');
 insert  into `mini`.`ibe_bustype`(`type_id`,`type_name`) values (5,'NonProfit');
 
-UNLOCK TABLES;
+/*UNLOCK TABLES;*/
 
 /*Data for the table `ibe_event` */
 
-LOCK TABLES `mini`.`ibe_event` WRITE;
+/* LOCK TABLES `mini`.`ibe_event` WRITE;*/
 
 insert  into `mini`.`ibe_event`(`event_id`,`EventName`,`EventDate`,`EventLocationID`,`EventSponsor`,`EventStartTime`) values (1,'Membership',NULL,3,1,NULL);
 insert  into `mini`.`ibe_event`(`event_id`,`EventName`,`EventDate`,`EventLocationID`,`EventSponsor`,`EventStartTime`) values (2,'Power Breakfast','2016-02-19',1,1,NULL);
@@ -221,11 +221,11 @@ insert  into `mini`.`ibe_event`(`event_id`,`EventName`,`EventDate`,`EventLocatio
 insert  into `mini`.`ibe_event`(`event_id`,`EventName`,`EventDate`,`EventLocationID`,`EventSponsor`,`EventStartTime`) values (163,'Building Word of Mouth Using Social Media: It`s Word Of Mouth At The Speed Of Light! ',NULL,4,259,NULL);
 insert  into `mini`.`ibe_event`(`event_id`,`EventName`,`EventDate`,`EventLocationID`,`EventSponsor`,`EventStartTime`) values (164,'Power Lunch','2016-10-14',2,1,'11:30:00');
 
-UNLOCK TABLES;
+/* UNLOCK TABLES;*/
 
 /*Data for the table `ibe_personrace` */
 
-LOCK TABLES `mini`.`ibe_personrace` WRITE;
+/*LOCK TABLES `mini`.`ibe_personrace` WRITE;*/
 
 insert  into `mini`.`ibe_personrace`(`race_id`,`race_name`) values (1,'Asian');
 insert  into `mini`.`ibe_personrace`(`race_id`,`race_name`) values (2,'Black');
@@ -233,11 +233,11 @@ insert  into `mini`.`ibe_personrace`(`race_id`,`race_name`) values (3,'Caucasian
 insert  into `mini`.`ibe_personrace`(`race_id`,`race_name`) values (4,'Hispanic');
 insert  into `mini`.`ibe_personrace`(`race_id`,`race_name`) values (5,'Native American');
 
-UNLOCK TABLES;
+/*UNLOCK TABLES;*/
 
 /*Data for the table `mini`.`ibe_refsource` */
 
-LOCK TABLES `mini`.`ibe_refsource` WRITE;
+/*LOCK TABLES `mini`.`ibe_refsource` WRITE;*/
 
 insert  into `mini`.`ibe_refsource`(`refsource_id`,`refsource_name`) values (1,'Bank');
 insert  into `mini`.`ibe_refsource`(`refsource_id`,`refsource_name`) values (2,'Newspaper');
@@ -262,5 +262,5 @@ insert  into `mini`.`ibe_refsource`(`refsource_id`,`refsource_name`) values (20,
 insert  into `mini`.`ibe_refsource`(`refsource_id`,`refsource_name`) values (21,'Union County Chamber Event calendar');
 insert  into `mini`.`ibe_refsource`(`refsource_id`,`refsource_name`) values (22,'Charkotte Chamber Event calendar');
 
-UNLOCK TABLES;
+/*UNLOCK TABLES;*/
 

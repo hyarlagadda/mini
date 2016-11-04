@@ -7,7 +7,7 @@ CREATE TABLE `mini`.`song` (
   UNIQUE KEY `id` (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=31 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
-DROP TABLE IF EXISTS `mini`.`ibe_busstage`;
+/* DROP TABLE IF EXISTS `mini`.`ibe_busstage`; */
 
 CREATE TABLE `mini`.`ibe_busstage` (
 `stage_id` int(10) unsigned NOT NULL auto_increment,
@@ -19,7 +19,7 @@ PRIMARY KEY  (`stage_id`)
 
 /*Table structure for table `ibe_bustype` */
 
-DROP TABLE IF EXISTS `mini`.`ibe_bustype`;
+/* DROP TABLE IF EXISTS `mini`.`ibe_bustype`;*/
 
 CREATE TABLE `mini`.`ibe_bustype` (
 `type_id` int(10) unsigned NOT NULL auto_increment,
@@ -30,7 +30,8 @@ PRIMARY KEY  (`type_id`)
 /*Data for the table `ibe_bustype` */
 
 
-DROP TABLE IF EXISTS `mini`.`ibe_current_event_nn`;		/*"nn" Must be in corresponding table.*/
+/*DROP TABLE IF EXISTS `mini`.`ibe_current_event_nn`;*/
+		/*"nn" Must be in corresponding table.*/
 
 CREATE TABLE `mini`.`ibe_current_event_nn` (
 `firstname` varchar(64) NOT NULL,
@@ -54,7 +55,7 @@ PRIMARY KEY  (`email`)
 
 /*Data for the table `ibe_current_event_nn` */
 
-DROP TABLE IF EXISTS `mini`.`ibe_event`;
+/* DROP TABLE IF EXISTS `mini`.`ibe_event`;*/
 
 CREATE TABLE `mini`.`ibe_event` (
 `event_id` bigint(20) unsigned NOT NULL auto_increment COMMENT 'id of event',
@@ -72,7 +73,7 @@ CONSTRAINT `FK_LOC` FOREIGN KEY (`EventLocationID`) REFERENCES `ibe_location` (`
 
 /*Data for the table `ibe_event` */
 
-DROP TABLE IF EXISTS `mini`.`ibe_personrace`;
+/*DROP TABLE IF EXISTS `mini`.`ibe_personrace`;*/
 
 CREATE TABLE `mini`.`ibe_personrace` (
 `race_id` int(10) unsigned NOT NULL auto_increment,
@@ -82,7 +83,7 @@ PRIMARY KEY  (`race_id`)
 
 /*Data for the table `ibe_personrace` */
 
-DROP TABLE IF EXISTS `mini`.`ibe_refsource`;
+/*DROP TABLE IF EXISTS `mini`.`ibe_refsource`;*/
 
 CREATE TABLE `mini`.`ibe_refsource` (
 `refsource_id` int(10) unsigned NOT NULL auto_increment,
