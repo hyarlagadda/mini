@@ -53,7 +53,8 @@ sudo rm "/var/www/html/index.html"
 sudo apt-get -y install git
 
 # git clone MINI
-sudo git clone https://github.com/panique/mini "/var/www/html/${PROJECTFOLDER}"
+#sudo git clone https://github.com/panique/mini "/var/www/html/${PROJECTFOLDER}"
+sudo git clone https://github.com/hyarlagadda/mini "/var/www/html/${PROJECTFOLDER}"
 
 # install Composer (not necessary by default)
 #curl -s https://getcomposer.org/installer | php
