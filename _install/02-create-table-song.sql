@@ -51,7 +51,7 @@ CREATE TABLE `mini`.`ibe_current_event_nn` (
 `refsource` int(10) default NULL,			/*Must be in corresponding table.*/
 `attended` enum('No','Yes') NOT NULL default 'No',
 PRIMARY KEY  (`email`)
-) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 /*Data for the table `ibe_current_event_nn` */
 
